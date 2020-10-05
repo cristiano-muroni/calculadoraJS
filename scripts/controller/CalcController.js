@@ -12,8 +12,9 @@ class CalcController{
 
     initialize(){
         setInterval(() =>{
-            this.displayCalc = this.currentDate.toLocaleDateString(this._locale);
+            this.displayDate = this.currentDate.toLocaleDateString(this._locale);
             this.displayTime = this.currentDate.toLocaleTimeString(this._locale);
+            
         })        
       
 
@@ -42,17 +43,17 @@ class CalcController{
      }
 
      set displayTime(value){
-        return this_timeEl.innerHTML = value;
+        return this._timeEl.innerHTML = value;
 
     }
 
       get displayDate(){
-          return this_dateEl.innerHTML;
+          return this._dateEl.innerHTML;
 
       }
 
       set displayDate(value){
-        return this_dateEl.innerHTML = value;
+        return this._dateEl.innerHTML = value;
 
     }
 
